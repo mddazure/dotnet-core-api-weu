@@ -11,6 +11,19 @@ using TodoApi.Models;
 
 namespace TodoApi.Controllers
 {
+    [Route("weu/whoami")]
+    public class WhoamiController : Controller
+    {
+    // GET: /Whoami
+        [HttpGet]
+        public async Task<ActionResult<string>> Whoami()
+        {
+            return "weu";
+        }
+    }
+
+
+
     [Route("weu/api/[controller]")] 
     [ApiController]
     public class TodoController : Controller
